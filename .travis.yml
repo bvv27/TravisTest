@@ -1,4 +1,6 @@
 language: csharp
 solution: TravisTest.sln
-install:
-  - sudo apt-get install mono-devel mono-gmcs nunit-console
+before_install:
+  - sudo apt-get update -qq > /dev/null
+  - sudo apt-get install -qq mono-devel mono-gmcs > /dev/null
+  - mozroots --import --sync
