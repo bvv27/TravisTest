@@ -18,7 +18,7 @@ namespace TravisTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Class1 a = new Class1();
+            var a = new Class1();
             button1.Text = a.Get("123");
         }
     }
